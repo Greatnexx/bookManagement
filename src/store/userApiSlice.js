@@ -8,7 +8,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     login: builder.mutation({
       query: (data) => ({
-        url: `http://localhost:5000/api/users/login`,
+        url: `https://backendproject-beta.vercel.app/api/users/login`,
         method: 'POST',
         body: data,
       }),
@@ -28,7 +28,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
 
     register: builder.mutation({
       query: (data) => ({
-        url: `http://localhost:5000/api/users/register`,
+        url: `https://backendproject-beta.vercel.app/api/users/register`,
         method: 'POST',
         body: data,
       }),

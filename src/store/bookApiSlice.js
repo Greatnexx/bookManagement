@@ -8,7 +8,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     addBook: builder.mutation({
       query: ({model, token}) => ({
-        url: `http://localhost:5000/api/books`,
+        url: `https://backendproject-beta.vercel.app/api/books`,
         method: 'POST',
         body: model,
         headers: {
@@ -21,7 +21,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
     
     getAllBooks: builder.query({
         query: ({page, token}) => ({
-            url: `http://localhost:5000/api/books?page=${page}`,
+            url: `https://backendproject-beta.vercel.app/api/books?page=${page}`,
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
     
     searchBooks: builder.query({
         query: ({keyword, token}) => ({
-            url: `http://localhost:5000/api/books?keyword=${keyword}`,
+            url: `https://backendproject-beta.vercel.app/api/books?keyword=${keyword}`,
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
     
     getSingleBook: builder.query({
         query: ({id, token}) => ({
-            url: `http://localhost:5000/api/books/${id}`,
+            url: `https://backendproject-beta.vercel.app/api/books/${id}`,
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
     
     deleteBook: builder.mutation({
         query: ({id, token}) => ({
-            url: `http://localhost:5000/api/books/${id}`,
+            url: `https://backendproject-beta.vercel.app/api/books/${id}`,
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ export const bookApiSlice = apiSlice.injectEndpoints({
     }),
     updateBook: builder.mutation({
         query: ({id, model, token}) => ({
-            url: `http://localhost:5000/api/books/${id}`,
+            url: `https://backendproject-beta.vercel.app/api/books/${id}`,
             method: 'PUT',
             body: model,
             headers: {

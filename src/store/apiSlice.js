@@ -2,7 +2,7 @@ import { fetchBaseQuery, createApi } from "@reduxjs/toolkit/query/react";
 import { toast } from "react-toastify";
 
 const baseQuery = fetchBaseQuery({
-	baseUrl: "http://localhost:5000",
+	baseUrl: "https://backendproject-beta.vercel.app",
 });
 
 const baseQueryWithReauth = async (args, api, extraOptions) => {
