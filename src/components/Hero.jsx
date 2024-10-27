@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -16,12 +17,12 @@ const HeroSection = () => {
           Keep track of your favorite books, manage your reading list, and add new titles with ease. Organize your book collection with just a few clicks!
         </p>
         <div className="mt-8">
-          <a
-            href="/add"
+          <Link
+            to="/add"
             className="px-9 py-4 bg-blue-800 hover:bg-indigo-500 text-white text-lg font-semibold rounded-md shadow-md"
           >
             Add Your First Book
-          </a>
+          </Link>
         </div>
       </div>
     </div>
